@@ -4,10 +4,10 @@ Vangl is a C# Discord bot powered by the .NET Framework
 ## Supported Commands
 - [x] **!help** | *displays a list of available commands & usage*
 - [x] **!ping** | *responds with "pong" if the bot is alive*
-- [x] **!dict** <word> | *defines a word using the Merriam-Webster dictionary API*
-- [x] **!remindme** <Description> <Time Interval in Seconds> | *sets a reminder*
-- [x] **!covidcases** <Country> | *fetches COVID-19 Statistics for <Country> using api.covid19api.com*
-- [x] **!libgen** <Book Title> | *fetches a search results page from www.libgen.is*
+- [x] **!dict** "word" | *defines a word using the Merriam-Webster dictionary API*
+- [x] **!remindme** "Description" "Time Interval in Seconds" | *sets a reminder*
+- [x] **!covidcases** "Country" | *fetches COVID-19 Statistics for <Country> using api.covid19api.com*
+- [x] **!libgen** "Book Title" | *fetches a search results page from www.libgen.is*
 
 ## Usage Notes
 - To use this bot, you must first register a bot on the [Discord Developer Portal](https://discord.com/developers/)
