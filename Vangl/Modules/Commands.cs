@@ -25,11 +25,14 @@ namespace Vangl.Modules
         [Command("help")]
         public async Task ShowHelp()
         {
-            await ReplyAsync("!dict <word> -> defines <word>");
-            await ReplyAsync("!libgen <Book Title> -> searches for <Book Title> on LibGen.Is");
-            await ReplyAsync("!remindme <Description> <Time Interval in Seconds> -> sets a reminder");
-            await ReplyAsync("!covidcases <Country> -> fetches COVID-19 Statistics for <Country>");
-            await ReplyAsync("Use double quotes for arguments that contain spaces");
+            string helpMessage = "!ping | responds with 'pong' if the bot is alive" + "\n"
+                                 + "!help | displays a list of available commands & usage" + "\n"
+                                 + "!dict <word> | defines a word" + "\n"
+                                 + "!remindme <Description> <Time Interval in Seconds> | sets a reminder" + "\n"
+                                 + "!covidcases <Country> | fetches COVID - 19 Statistics for <Country>" + "\n"
+                                 + "!libgen <Book Title> | fetches a search results page from www.libgen.is" + "\n"
+                                 + "Use double quotes for arguments that contain spaces";
+            await ReplyAsync(helpMessage);
         }
 
         [Command("dict")]
